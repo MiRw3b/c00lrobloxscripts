@@ -1,0 +1,9 @@
+local plr = game.Players.LocalPlayer local chr = plr.Character
+chr.Humanoid:Destroy()
+
+function onKeyPress(actionName, userInputState, inputObject)
+local plr = game.Players.LocalPlayer local chr = plr.Character
+chr.Humanoid:Destroy()
+end
+
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.F)
