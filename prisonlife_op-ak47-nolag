@@ -10,7 +10,6 @@ for i, v in next, debug.getregistry() do
             v.MaxAmmo = math.huge
             v.CurrentAmmo = math.huge
             v.StoredAmmo = math.huge
-            v.Damage = math.huge
         end
     end
 end
