@@ -1,7 +1,4 @@
 --When you press the key "F", your character's "humanoid" part gets deleted, so you get ragdolled.
-local plr = game.Players.LocalPlayer local chr = plr.Character
-chr.Humanoid:Destroy()
-
 function onKeyPress(actionName, userInputState, inputObject)
 local plr = game.Players.LocalPlayer local chr = plr.Character
 chr.Humanoid:Destroy()
