@@ -1,3 +1,4 @@
+--PS: idk if it even still works so PROBABLY PATCHED?
 --Gives you a modded ak-47, fixed edition, because it doesn't makes the server lag/crash.
 
 workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS:findFirstChild('AK-47', true).ITEMPICKUP)
